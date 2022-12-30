@@ -1,0 +1,3 @@
+﻿12:17:05 - INFO - STEP: eu acessei a documentacao do Behave
+12:17:07 - INFO - STEP: o titulo da pagina deve ser "Welcome to behave! — behave 1.2.7.dev2 documentation"
+12:17:07 - INFO - STEP: eu devo ver a mensagem "Welcome to behave!"

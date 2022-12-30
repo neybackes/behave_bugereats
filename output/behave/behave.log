@@ -1,34 +1,9 @@
-Feature: Pagina Home # features/home.feature:3
+Feature: Acessar a documentaçao do Behave # features/behave.feature:3
   Como usuario
-  Quero poder acessar a página inicial do site
+  Quero poder acessar a a documentação do Behave
   @Common
-  Scenario: Validar acesso a pagina Home                                  # features/home.feature:7
-    Given eu acessei a pagina "home page"                                 # features/steps/home_steps.py:9
-    When eu vejo a mensagem "Seja um parceiro entregador pela Buger Eats" # features/steps/home_steps.py:13
-    Then o titulo da pagina deve ser "Buger Eats"                         # features/steps/home_steps.py:20
-
-Feature: Pagina de cadastro # features/singnup.feature:1
-  Como usuario
-  Quero acessar a página de cadastro e me cadastrar para ser entregador
-  @Common
-  Scenario: Acessar a pagina de cadastro               # features/singnup.feature:5
-    Given que eu estou na pagina "Home"                # features/steps/singnup_step.py:9
-    When eu clico em "Cadastra-se para fazer entregas" # features/steps/singnup_step.py:14
-    Then eu devo ver a pagina de cadastro              # features/steps/singnup_step.py:19
-
-  @common
-  Scenario: Preencher o cadastro                                # features/singnup.feature:10
-    Given eu estou na pagina ""Cadastra-se para fazer entregas" # features/steps/singnup_step.py:23
-    When eu preencho o cadastro                                 # features/steps/singnup_step.py:31
-    Then eu clico em  "Cadastra-se para fazer entregas"         # features/steps/singnup_step.py:36
-    Then eu devo ver uma mensagem de sucesso                    # features/steps/singnup_step.py:41
-
-Feature: Common step - Geral # features/common/common.feature:1
-  Eu quero implementar steps genericos do projeto
-  Para usar em todos os testes
-  Scenario: Steps genericos do projeto            # features/common/common.feature:6
-    Given "Home Page"                             # features/common/common_step.py:9
-    Then o titulo da pagina deve ser "Buger Eats" # features/steps/home_steps.py:20
-    When "Cadastra-se para fazer entregas"        # features/common/common_step.py:20
-    Then 'Validar pagina de cadastro'             # features/common/common_step.py:25
+  Scenario: Validar acesso a documentação                                                   # features/behave.feature:7
+    Given eu acessei a documentacao do Behave                                               # features/steps/behave_step.py:7
+    Then o titulo da pagina deve ser "Welcome to behave! — behave 1.2.7.dev2 documentation" # features/steps/behave_step.py:12
+    Then eu devo ver a mensagem "Welcome to behave!"                                        # features/steps/behave_step.py:19
 

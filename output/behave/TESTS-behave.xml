@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="1.7795655727386475" tests='1' skipped='0'
+name="Behave" failures='0' errors='0'><testcase time="1.7795655727386475" name="Validar_Acesso_A_Documentacao" status="passed"
+         classname="Acessar_A_Documentacao_Do_Behave"><system-out>
+            <![CDATA[
+            @scenario.begin
+                @Common
+                scenario: Validar acesso a documentação
+                given eu acessei a documentacao do Behave ... passed in 1.739s 
+                then o titulo da pagina deve ser "Welcome to behave! — behave 1.2.7.dev2 documentation" ... passed in 0.006883s 
+                then eu devo ver a mensagem "Welcome to behave!" ... passed in 0.03399s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>

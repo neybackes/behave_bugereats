@@ -2,20 +2,33 @@ from selenium import webdriver
 import os
 
 def before_all(context):
-    # code to run before all scenarios
-    # create a webdriver instance
     context.driver = webdriver.Chrome()
     context.driver.set_page_load_timeout(30)
     context.driver.maximize_window()
     context.driver.set_script_timeout(30)
 
-def before_scenario(context, scenario):
-    
-    context.driver.delete_all_cookies()
+def after_all(context):    
+    pass
+
+def before_scenario(context, scenario):   
+    pass
 
 def after_scenario(context, scenario):
-    
-    if scenario.status == "passed":        
-        if not os.path.exists('reports'):
-            os.makedirs('reports')        
-        context.driver.save_screenshot(f'reports/{scenario.name}.png')
+    # code to run after each scenario
+    context.driver.quit()
+
+def before_feature(context, feature):
+    # code to run before each feature
+    pass
+def after_feature(context, feature):
+    # code to run after each feature
+    pass
+
+def before_step(context, feature):
+    # code to run before each feature
+    pass
+def after_step(context, feature):
+    # code to run after each feature
+    pass
+
+
