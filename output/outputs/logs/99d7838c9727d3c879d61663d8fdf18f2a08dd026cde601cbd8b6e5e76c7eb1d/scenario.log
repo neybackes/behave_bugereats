@@ -1,0 +1,4 @@
+﻿12:04:47 - INFO - STEP: eu estou na pagina ""Cadastra-se para fazer entregas"
+12:04:47 - INFO - STEP: eu preencho o cadastro
+12:04:58 - INFO - STEP: eu clico em  "Cadastra-se para fazer entregas"
+12:04:58 - INFO - STEP: eu devo ver uma mensagem de sucesso

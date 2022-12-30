@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time="0.21991610527038574" tests='1' skipped='0'
+name="Commoncommon" failures='0' errors='0'><testcase time="0.21991610527038574" name="Steps_Genericos_Do_Projeto" status="passed"
+         classname="Common_Step_-_Geral"><system-out>
+            <![CDATA[
+            @scenario.begin
+                
+                scenario: Steps genericos do projeto
+                given "Home Page" ... passed in 0.1062s 
+                then o titulo da pagina deve ser "Buger Eats" ... passed in 0.006217s 
+                when "Cadastra-se para fazer entregas" ... passed in 0.0762s 
+                then 'Validar pagina de cadastro' ... passed in 0.0313s 
+@scenario.end
+            ----------------------------------------------------------------------------------------------------
+            ]]>
+            </system-out>
+        </testcase></testsuite>
